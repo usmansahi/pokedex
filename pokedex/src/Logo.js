@@ -1,11 +1,9 @@
-const Logo = () => {
-  const logWhenClicked = () => {
-    console.log("hy there!");
-  };
+const Logo = (props) => {
+ 
     return (
       <div>
        
-        <img  onClick ={logWhenClicked} src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png" alt="logo"></img>
+        <img  onClick ={props.handleClick} src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png" alt="logo"></img>
      
     
       </div>

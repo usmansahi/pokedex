@@ -1,24 +1,21 @@
-  import BestPokemon from "./BestPokemon";
-  import Logo from "./Logo";
+import BestPokemon from './BestPokemon';
+import CaughtPokemon from './CaughtPokemon';
+import Logo from './Logo';
 
-  const App =() => {
-    return (
-      
-      <div>
-        <header>
-            <h1>Welcome to the Pokedex</h1>
-            </header>
-         <Logo  />
-        <BestPokemon />
-        </div>
+const App = () => {
+  const logWhenClicked = () => {
+    console.log('hy there!');
+  };
+  return (
+    <div>
+      <header>
+        <h1>Welcome to the Pokedex</h1>
+      </header>
+      <Logo handleClick={logWhenClicked} />
+      <BestPokemon />
+      <CaughtPokemon />
+    </div>
+  );
+};
 
-    )
-  }
-
-  
-      
-    
-
-
-  export default App;
-
+export default App;
