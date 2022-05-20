@@ -1,6 +1,8 @@
 import BestPokemon from './BestPokemon';
 import CaughtPokemon from './CaughtPokemon';
 import Logo from './Logo';
+import PokemonMovesSelector from './PokemonMovesSelector';
+import PokemonCity from './PokemonCity';
 
 const App = () => {
   const logWhenClicked = () => {
@@ -8,12 +10,14 @@ const App = () => {
   };
   return (
     <div>
-      <header>
+      <header className='header'>
         <h1>Welcome to the Pokedex</h1>
       </header>
       <Logo handleClick={logWhenClicked} />
-      <BestPokemon />
+      <BestPokemon pokemonName=' charmander' />
       <CaughtPokemon />
+      <PokemonMovesSelector />
+      <PokemonCity />
     </div>
   );
 };
